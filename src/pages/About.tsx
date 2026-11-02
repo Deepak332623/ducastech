@@ -72,15 +72,15 @@ const About: React.FC = () => {
                 Duchas Technologies Pvt Ltd (CIN: U62013GJ2023PTC140824), incorporated on May 04, 2023 
                 in Vadodara, Gujarat, is an AI-first technology company focused on building next-generation 
                 AI-powered biometric authentication, intelligent fraud detection, identity verification, 
-                and contactless digital experiences. Founded by Jay Chintan Patel, we bridge the gap 
-                between advanced artificial intelligence and practical real-world security applications.
+                and contactless digital experiences. We bridge the gap between advanced artificial 
+                intelligence and practical real-world security applications.
               </p>
               <p>
-                As an <strong>AWS Activate member</strong>, our platform is built on AWS cloud infrastructure 
-                — leveraging Amazon's enterprise-grade compute, storage, SageMaker AI/ML, and Rekognition services 
-                to deliver scalable, secure, and globally available AI-driven biometric solutions. As a proud 
-                member of the <strong>NVIDIA Inception Program</strong>, we harness NVIDIA GPU-accelerated computing, 
-                CUDA cores, TensorRT, and deep learning frameworks for real-time liveness detection, 
+                Our platform is built on <strong>enterprise cloud infrastructure</strong>, leveraging 
+                scalable compute, storage, AI/ML services, and intelligent recognition APIs 
+                to deliver globally available AI-driven biometric solutions. We harness 
+                <strong>GPU-accelerated deep learning</strong> — including CUDA cores, TensorRT, and 
+                advanced neural network frameworks — for real-time liveness detection, 
                 AI-powered fraud prevention, and intelligent threat analytics.
               </p>
             </motion.div>
@@ -262,20 +262,20 @@ const About: React.FC = () => {
       <section className="section about-tech">
         <div className="container">
           <div className="section-header">
-            <span className="label">Technology Stack & Program Memberships</span>
-            <h2>Powered by Industry Leaders — AI at the Core</h2>
-            <p>We leverage world-class cloud and AI infrastructure, backed by official program memberships, to build our intelligent platform.</p>
+            <span className="label">Technology Stack</span>
+            <h2>Powered by AI at Every Layer</h2>
+            <p>We leverage world-class cloud and AI infrastructure to build our intelligent platform.</p>
           </div>
           <div className="about-tech__grid">
             <div className="about-tech__card glass-card">
-              <div className="about-tech__badge">AWS Activate Member</div>
-              <h3>☁️ Amazon Web Services</h3>
-              <p>As an AWS Activate member, our entire AI-powered biometric platform runs on AWS infrastructure — EC2, S3, Lambda, SageMaker AI, Rekognition, and CloudFront — delivering enterprise-grade reliability, global scalability, and SOC 2 compliant security with built-in machine learning capabilities.</p>
+              <div className="about-tech__badge">Production</div>
+              <h3>☁️ Cloud Infrastructure</h3>
+              <p>Our AI-powered biometric platform runs on enterprise cloud infrastructure — scalable compute, object storage, serverless functions, ML services, and global CDN — delivering enterprise-grade reliability, global scalability, and SOC 2 compliant security with built-in machine learning capabilities.</p>
             </div>
             <div className="about-tech__card glass-card">
-              <div className="about-tech__badge about-tech__badge--future">NVIDIA Inception Member</div>
-              <h3>🟢 NVIDIA AI Platform</h3>
-              <p>As a member of the NVIDIA Inception Program, we leverage NVIDIA GPU-accelerated computing, CUDA cores, TensorRT, and Triton Inference Server for deep learning biometric models, real-time AI liveness detection, intelligent fraud prevention, and edge AI deployment.</p>
+              <div className="about-tech__badge about-tech__badge--future">AI Engine</div>
+              <h3>🧠 GPU-Accelerated AI</h3>
+              <p>We leverage GPU-accelerated computing, CUDA cores, TensorRT, and Triton Inference Server for deep learning biometric models, real-time AI liveness detection, intelligent fraud prevention, and edge AI deployment — delivering sub-200ms inference at scale.</p>
             </div>
           </div>
         </div>
