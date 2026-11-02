@@ -1,0 +1,26 @@
+.prodsel-page{position:relative;min-height:100vh;padding:calc(var(--nav-height)+var(--space-3xl)) 0 var(--space-4xl);}
+.prodsel-page__bg{position:absolute;inset:0;overflow:hidden;}
+.prodsel-page__gradient{position:absolute;inset:0;background:linear-gradient(135deg,#fefdfb 0%,#f8f6f1 50%,#fefdfb 100%);}
+.prodsel-page__orb{position:absolute;border-radius:50%;filter:blur(120px);}
+.prodsel-page__orb--1{width:500px;height:500px;background:rgba(184,134,11,0.06);top:5%;right:-5%;}
+.prodsel-page__orb--2{width:400px;height:400px;background:rgba(107,76,138,0.05);bottom:5%;left:-5%;}
+.prodsel-page__container{position:relative;z-index:1;}
+.prodsel-header{text-align:center;max-width:700px;margin:0 auto var(--space-2xl);display:flex;flex-direction:column;align-items:center;gap:var(--space-md);}
+.prodsel-header h1{font-size:clamp(2rem,4vw,3rem);}
+.prodsel-header>p{font-size:1.125rem;color:var(--color-text-secondary);}
+.prodsel-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--space-xl);max-width:900px;margin:0 auto;}
+.prodsel-card{position:relative;display:flex;flex-direction:column;align-items:center;gap:var(--space-md);padding:0 !important;overflow:hidden;cursor:pointer;transition:all var(--transition-slow);text-align:center;border:2px solid transparent !important;}
+.prodsel-card:hover{transform:translateY(-6px);box-shadow:0 20px 60px rgba(0,0,0,0.05);}
+.prodsel-card--active{border-color:var(--color-cyan) !important;box-shadow:0 0 30px rgba(184,134,11,0.15) !important;}
+.prodsel-card__check{position:absolute;top:var(--space-md);right:var(--space-md);z-index:3;width:32px;height:32px;border-radius:50%;background:var(--color-cyan);color:#000;display:flex;align-items:center;justify-content:center;animation:scaleIn 0.3s ease;}
+@keyframes scaleIn{from{transform:scale(0);}to{transform:scale(1);}}
+.prodsel-card__img{width:100%;aspect-ratio:16/9;overflow:hidden;position:relative;}
+.prodsel-card__img img{width:100%;height:100%;object-fit:cover;transition:transform 0.6s ease;}
+.prodsel-card:hover .prodsel-card__img img{transform:scale(1.06);}
+.prodsel-card__overlay{position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(255,255,255,0.95) 100%);}
+.prodsel-card__icon{width:48px;height:48px;border-radius:var(--radius-lg);border:1px solid;display:flex;align-items:center;justify-content:center;margin-top:calc(-24px);position:relative;z-index:2;background:var(--color-bg-primary) !important;}
+.prodsel-card h3{font-size:1.25rem;padding:0 var(--space-lg);}
+.prodsel-card p{font-size:0.875rem;color:var(--color-text-tertiary);padding:0 var(--space-lg) var(--space-xl);line-height:1.6;}
+.prodsel-footer{text-align:center;margin-top:var(--space-2xl);display:flex;flex-direction:column;align-items:center;gap:var(--space-md);}
+.prodsel-count{font-size:0.9375rem;color:var(--color-text-secondary);}
+@media(max-width:768px){.prodsel-grid{grid-template-columns:1fr;max-width:480px;}}

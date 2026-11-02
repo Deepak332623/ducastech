@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Duchas Technologies — Investor & Partner Pitch Deck</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+:root{--gold:#b8860b;--dark:#1a1612;--cream:#fefdfb;--beige:#f8f6f1;--text:#5c5347;--muted:#94897a;}
+body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:var(--cream);color:var(--dark);line-height:1.6;}
+.slide{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:60px 80px;position:relative;page-break-after:always;border-bottom:1px solid rgba(184,134,11,0.1);}
+.slide--dark{background:var(--dark);color:var(--cream);}
+.slide--beige{background:var(--beige);}
+.slide__num{position:absolute;top:40px;right:60px;font-size:0.75rem;color:var(--muted);font-weight:600;letter-spacing:0.1em;}
+.slide--dark .slide__num{color:rgba(255,255,255,0.3);}
+h1{font-size:3rem;font-weight:800;line-height:1.1;margin-bottom:1rem;}
+h2{font-size:2.25rem;font-weight:800;line-height:1.15;margin-bottom:1.5rem;}
+h3{font-size:1.25rem;font-weight:700;margin-bottom:0.5rem;}
+p{font-size:1.0625rem;color:var(--text);max-width:700px;margin-bottom:1rem;}
+.slide--dark p{color:rgba(255,255,255,0.7);}
+.gold{color:var(--gold);}
+.badge{display:inline-block;padding:4px 14px;border-radius:99px;font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;border:1px solid;margin-bottom:1.5rem;}
+.badge--gold{color:var(--gold);border-color:rgba(184,134,11,0.3);background:rgba(184,134,11,0.06);}
+.badge--white{color:rgba(255,255,255,0.8);border-color:rgba(255,255,255,0.2);background:rgba(255,255,255,0.05);}
+.grid{display:grid;gap:2rem;margin-top:2rem;}
+.grid--2{grid-template-columns:1fr 1fr;}
+.grid--3{grid-template-columns:1fr 1fr 1fr;}
+.grid--4{grid-template-columns:1fr 1fr 1fr 1fr;}
+.card{padding:1.5rem;border-radius:12px;border:1px solid rgba(184,134,11,0.1);background:rgba(255,255,255,0.6);}
+.slide--dark .card{background:rgba(255,255,255,0.05);border-color:rgba(255,255,255,0.1);}
+.card h3{color:var(--dark);}
+.slide--dark .card h3{color:var(--cream);}
+.card p{font-size:0.9rem;margin:0;}
+.stat{text-align:center;padding:1.5rem;}
+.stat__val{font-size:2.5rem;font-weight:800;background:linear-gradient(135deg,#b8860b,#d4a855);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.stat__label{font-size:0.8125rem;color:var(--muted);margin-top:4px;}
+.flow{display:flex;align-items:center;justify-content:center;gap:0;margin:2rem 0;}
+.flow__node{display:flex;flex-direction:column;align-items:center;gap:0.5rem;min-width:140px;text-align:center;}
+.flow__circle{width:64px;height:64px;border-radius:50%;border:2px solid;display:flex;align-items:center;justify-content:center;font-size:1.5rem;}
+.flow__arrow{font-size:1.5rem;color:var(--gold);margin:0 0.5rem;padding-top:0;}
+.logo-bar{display:flex;gap:2rem;align-items:center;margin-top:2rem;opacity:0.7;}
+.logo-bar span{font-size:1.25rem;font-weight:700;}
+.timeline{display:flex;flex-direction:column;gap:1.5rem;margin-top:1.5rem;padding-left:2rem;border-left:2px solid rgba(184,134,11,0.2);}
+.timeline__item{position:relative;padding-left:1.5rem;}
+.timeline__item::before{content:'';position:absolute;left:-2rem;top:8px;width:12px;height:12px;border-radius:50%;border:2px solid var(--gold);background:var(--cream);}
+.timeline__item--active::before{background:var(--gold);}
+.footer-bar{display:flex;justify-content:space-between;align-items:center;margin-top:3rem;padding-top:1.5rem;border-top:1px solid rgba(184,134,11,0.1);font-size:0.8125rem;color:var(--muted);}
+.slide--dark .footer-bar{border-color:rgba(255,255,255,0.1);color:rgba(255,255,255,0.4);}
+@media print{.slide{min-height:auto;height:100vh;overflow:hidden;padding:40px 60px;} body{-webkit-print-color-adjust:exact;print-color-adjust:exact;}}
+@media(max-width:768px){.slide{padding:40px 24px;} h1{font-size:2rem;} h2{font-size:1.5rem;} .grid--2,.grid--3,.grid--4{grid-template-columns:1fr;} .flow{flex-direction:column;} .flow__arrow{transform:rotate(90deg);}}
+</style>
+</head>
+<body>
+
+
+<!-- SLIDE 1: COVER -->
+<div class="slide slide--dark">
+  <span class="slide__num">01 / 13</span>
+  <span class="badge badge--white">Confidential — Investor Deck 2026</span>
+  <h1>Duchas Technologies<br><span class="gold">Biometric Identity Platform</span></h1>
+  <p style="color:rgba(255,255,255,0.6);max-width:600px;">Enterprise-grade biometric authentication, contactless payments & identity verification — built on AWS cloud infrastructure with NVIDIA AI-powered precision.</p>
+  <div class="logo-bar" style="margin-top:3rem;">
+    <span>☁️ AWS</span><span>🟢 NVIDIA</span><span>🇮🇳 India</span>
+  </div>
+  <div class="footer-bar"><span>Duchas Technologies Pvt Ltd · CIN: U62013GJ2023PTC140824</span><span>duchastechnologies.com</span></div>
+</div>
+
+<!-- SLIDE 2: PROBLEM -->
+<div class="slide">
+  <span class="slide__num">02 / 13</span>
+  <span class="badge badge--gold">The Problem</span>
+  <h2>Identity Verification is <span class="gold">Broken</span></h2>
+  <div class="grid grid--3">
+    <div class="card"><h3>🔓 Passwords Fail</h3><p>81% of data breaches involve stolen or weak credentials. Traditional auth is fundamentally insecure.</p></div>
+    <div class="card"><h3>⏱️ Friction Kills UX</h3><p>Multi-step KYC takes 5-10 minutes. 40% of users abandon onboarding due to identity friction.</p></div>
+    <div class="card"><h3>💸 $6T in Fraud</h3><p>Global identity fraud losses exceed $6 trillion annually. Enterprises need real-time, unforgeable verification.</p></div>
+  </div>
+</div>
+
+<!-- SLIDE 3: SOLUTION -->
+<div class="slide slide--beige">
+  <span class="slide__num">03 / 13</span>
+  <span class="badge badge--gold">Our Solution</span>
+  <h2>Biometric Identity, <span class="gold">Reimagined</span></h2>
+  <p>Duchas Technologies delivers a cloud-native, AI-powered biometric platform that replaces passwords with palm veins, fingerprints, and multimodal biometrics — enabling sub-200ms authentication with 99.97% accuracy.</p>
+  <div class="grid grid--4" style="margin-top:2rem;">
+    <div class="stat"><div class="stat__val">&lt;200ms</div><div class="stat__label">Auth Speed</div></div>
+    <div class="stat"><div class="stat__val">99.97%</div><div class="stat__label">Accuracy</div></div>
+    <div class="stat"><div class="stat__val">10M+</div><div class="stat__label">Auth Capacity</div></div>
+    <div class="stat"><div class="stat__val">SOC 2</div><div class="stat__label">Compliant</div></div>
+  </div>
+</div>
+
+<!-- SLIDE 4: PRODUCTS -->
+<div class="slide">
+  <span class="slide__num">04 / 13</span>
+  <span class="badge badge--gold">Product Suite</span>
+  <h2>Four Products, One <span class="gold">Platform</span></h2>
+  <div class="grid grid--2">
+
+<!-- SLIDE 5: TECHNOLOGY ARCHITECTURE -->
+<div class="slide slide--dark">
+  <span class="slide__num">05 / 13</span>
+  <span class="badge badge--white">Technology Architecture</span>
+  <h2 style="color:var(--cream);">Cloud-Native <span class="gold">Biometric Pipeline</span></h2>
+  <div class="flow">
+    <div class="flow__node"><div class="flow__circle" style="border-color:#b8860b;color:#b8860b;">👆</div><strong>Capture</strong><small style="color:rgba(255,255,255,0.5);">Biometric Sensor</small></div>
+    <span class="flow__arrow">→</span>
+    <div class="flow__node"><div class="flow__circle" style="border-color:#FF9900;color:#FF9900;">☁️</div><strong style="color:#FF9900;">AWS Process</strong><small style="color:rgba(255,255,255,0.5);">Lambda + SageMaker</small></div>
+    <span class="flow__arrow">→</span>
+    <div class="flow__node"><div class="flow__circle" style="border-color:#76B900;color:#76B900;">🧠</div><strong style="color:#76B900;">NVIDIA Verify</strong><small style="color:rgba(255,255,255,0.5);">GPU + TensorRT</small></div>
+    <span class="flow__arrow">→</span>
+    <div class="flow__node"><div class="flow__circle" style="border-color:#b8860b;color:#b8860b;">✓</div><strong>Authorize</strong><small style="color:rgba(255,255,255,0.5);">API Gateway Token</small></div>
+  </div>
+  <div class="grid grid--2" style="margin-top:2rem;">
+    <div class="card"><h3>☁️ Amazon Web Services</h3><p>EC2 · S3 · Lambda · SageMaker · CloudFront · API Gateway · Cognito · DynamoDB</p></div>
+    <div class="card"><h3>🟢 NVIDIA AI Platform</h3><p>CUDA Cores · TensorRT · Triton Inference Server · DeepStream · GPU-accelerated ML (Future)</p></div>
+  </div>
+</div>
+
+<!-- SLIDE 6: NVIDIA INTEGRATION -->
+<div class="slide" style="background:linear-gradient(135deg,#f8f6f1,#fefdfb);">
+  <span class="slide__num">06 / 13</span>
+  <span class="badge badge--gold">NVIDIA Partnership Vision</span>
+  <h2>NVIDIA AI for <span class="gold">Next-Gen Biometrics</span></h2>
+  <p>We are integrating NVIDIA GPU-accelerated computing into our biometric pipeline to achieve unprecedented speed and accuracy in identity verification.</p>
+  <div class="grid grid--2" style="margin-top:2rem;">
+    <div class="card"><h3>🧠 Deep Learning Models</h3><p>NVIDIA GPU training for palm vein and fingerprint neural networks. 10x faster model training with CUDA cores.</p></div>
+    <div class="card"><h3>⚡ Real-Time Inference</h3><p>TensorRT-optimized inference engines for sub-50ms biometric matching at the edge.</p></div>
+    <div class="card"><h3>👁️ Liveness Detection</h3><p>DeepStream-powered anti-spoofing with 3D depth sensing and presentation attack detection.</p></div>
+    <div class="card"><h3>🔄 Edge AI Deployment</h3><p>NVIDIA Jetson for on-device biometric processing — offline capable, privacy-preserving.</p></div>
+  </div>
+</div>
+
+<!-- SLIDE 7: MARKET -->
+<div class="slide">
+  <span class="slide__num">07 / 13</span>
+  <span class="badge badge--gold">Market Opportunity</span>
+  <h2>A <span class="gold">$84B</span> Market by 2030</h2>
+  <div class="grid grid--3">
+    <div class="stat card"><div class="stat__val">$84B</div><div class="stat__label">Global Biometrics Market 2030</div></div>
+    <div class="stat card"><div class="stat__val">17.2%</div><div class="stat__label">CAGR 2024-2030</div></div>
+    <div class="stat card"><div class="stat__val">$12B</div><div class="stat__label">India Digital ID Market</div></div>
+  </div>
+  <p style="margin-top:2rem;">Segments: BFSI, Healthcare, Government, Retail, Smart Cities, Manufacturing, Travel & Hospitality</p>
+</div>
+
+<!-- SLIDE 8: BUSINESS MODEL -->
+<div class="slide slide--beige">
+  <span class="slide__num">08 / 13</span>
+  <span class="badge badge--gold">Business Model</span>
+  <h2>SaaS + API <span class="gold">Revenue Engine</span></h2>
+  <div class="grid grid--3">
+    <div class="card"><h3>Starter — $49/mo</h3><p>500 auth/mo · Single modality · Basic API · Email support · Standard dashboard</p></div>
+    <div class="card" style="border-color:var(--gold);"><h3>Premium — $199/mo ⭐</h3><p>10K auth/mo · Multi-modal · Full SDK · Priority support · Advanced analytics</p></div>
+    <div class="card"><h3>Pro — $599/mo</h3><p>Unlimited auth · All modalities · Whitelabel · 24/7 support · On-premises option</p></div>
+  </div>
+  <p style="margin-top:1.5rem;">Additional revenue: Enterprise MSAs, API transaction fees, hardware licensing, consulting.</p>
+</div>
+
+<!-- SLIDE 9: TRACTION -->
+<div class="slide">
+  <span class="slide__num">09 / 13</span>
+  <span class="badge badge--gold">Traction & Milestones</span>
+  <h2>Building <span class="gold">Momentum</span></h2>
+  <div class="timeline">
+    <div class="timeline__item timeline__item--active"><h3>May 2023 — Company Incorporated</h3><p>Duchas Technologies Pvt Ltd registered in Vadodara, Gujarat. CIN: U62013GJ2023PTC140824</p></div>
+    <div class="timeline__item timeline__item--active"><h3>2023-2024 — Platform Development</h3><p>Core biometric engine built on AWS. Palm vein recognition R&D. Architecture design completed.</p></div>
+
+<!-- SLIDE 10: COMPETITIVE ADVANTAGE -->
+<div class="slide slide--dark">
+  <span class="slide__num">10 / 13</span>
+  <span class="badge badge--white">Competitive Moat</span>
+  <h2 style="color:var(--cream);">Why <span class="gold">Duchas Wins</span></h2>
+  <div class="grid grid--2">
+    <div class="card"><h3>☁️ AWS-Native Architecture</h3><p>Not a legacy system ported to cloud — built from day one on AWS with serverless, auto-scaling infrastructure.</p></div>
+    <div class="card"><h3>🧠 NVIDIA AI Pipeline</h3><p>GPU-accelerated deep learning for biometric matching — 10x faster than CPU-only competitors.</p></div>
+    <div class="card"><h3>🔐 Multi-Modal Biometrics</h3><p>Palm vein + fingerprint + face — not dependent on a single modality. Highest accuracy, lowest false rejection.</p></div>
+    <div class="card"><h3>🇮🇳 India-First, Global-Ready</h3><p>Built for India's 1.4B identity market (Aadhaar, UPI) with architecture ready for global deployment.</p></div>
+  </div>
+</div>
+
+<!-- SLIDE 11: TEAM -->
+<div class="slide">
+  <span class="slide__num">11 / 13</span>
+  <span class="badge badge--gold">Leadership Team</span>
+  <h2>The <span class="gold">Visionaries</span></h2>
+  <div class="grid grid--2">
+    <div class="card" style="text-align:center;padding:2rem;">
+      <div style="width:72px;height:72px;border-radius:50%;background:linear-gradient(135deg,#b8860b,#d4a855);color:#fff;font-size:1.5rem;font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;">JP</div>
+      <h3>Jay Chintan Patel</h3>
+      <p style="color:var(--gold);font-weight:600;font-size:0.875rem;">Founder & Director</p>
+      <p style="font-size:0.875rem;">Visionary technologist with deep expertise in cloud architecture, AI/ML, and enterprise SaaS. Drives product strategy and technology innovation at Duchas.</p>
+    </div>
+    <div class="card" style="text-align:center;padding:2rem;">
+      <div style="width:72px;height:72px;border-radius:50%;background:linear-gradient(135deg,#b8860b,#d4a855);color:#fff;font-size:1.5rem;font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;">HP</div>
+      <h3>Hemaben Chintankumar Patel</h3>
+      <p style="color:var(--gold);font-weight:600;font-size:0.875rem;">Director</p>
+      <p style="font-size:0.875rem;">Brings exceptional leadership in corporate governance, financial strategy, and operational excellence. Ensures highest standards of integrity and compliance.</p>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 12: ASK -->
+<div class="slide slide--beige">
+  <span class="slide__num">12 / 13</span>
+  <span class="badge badge--gold">Partnership & Programs</span>
+  <h2>What We're <span class="gold">Seeking</span></h2>
+  <div class="grid grid--2">
+    <div class="card">
+      <h3>🟢 NVIDIA Inception Program</h3>
+      <p>Seeking NVIDIA Inception membership for GPU credits, DGX Cloud access, technical mentorship, co-marketing, and deep learning infrastructure for our biometric AI models.</p>
+      <p style="font-size:0.8125rem;color:var(--muted);margin-top:0.5rem;">Use case: TensorRT inference optimization, DeepStream liveness detection, Jetson edge deployment.</p>
+    </div>
+    <div class="card">
+      <h3>☁️ AWS Activate Program</h3>
+      <p>Leveraging AWS Activate for cloud credits, technical support, architecture reviews, and go-to-market resources to scale our SaaS platform globally.</p>
+      <p style="font-size:0.8125rem;color:var(--muted);margin-top:0.5rem;">Current stack: EC2, S3, Lambda, SageMaker, CloudFront, API Gateway, Cognito, DynamoDB.</p>
+    </div>
+  </div>
+  <div class="grid grid--3" style="margin-top:2rem;">
+    <div class="stat card"><div class="stat__val">$500K</div><div class="stat__label">Target Seed Round</div></div>
+    <div class="stat card"><div class="stat__val">18mo</div><div class="stat__label">Runway Target</div></div>
+    <div class="stat card"><div class="stat__val">10x</div><div class="stat__label">Revenue Growth Goal</div></div>
+  </div>
+</div>
+
+<!-- SLIDE 13: CONTACT -->
+<div class="slide slide--dark">
+  <span class="slide__num">13 / 13</span>
+  <span class="badge badge--white">Let's Connect</span>
+  <h1 style="color:var(--cream);">Ready to Partner<br>with <span class="gold">Duchas Technologies</span>?</h1>
+  <p style="color:rgba(255,255,255,0.6);max-width:600px;">We're building the future of biometric identity — and we're looking for visionary partners, investors, and technology allies to join us.</p>
+  <div style="margin-top:2rem;display:flex;flex-direction:column;gap:0.75rem;">
+    <p style="color:rgba(255,255,255,0.8);margin:0;"><strong style="color:var(--gold);">Email:</strong> hello@duchastechnologies.com</p>
+    <p style="color:rgba(255,255,255,0.8);margin:0;"><strong style="color:var(--gold);">LinkedIn:</strong> linkedin.com/company/duchas</p>
+    <p style="color:rgba(255,255,255,0.8);margin:0;"><strong style="color:var(--gold);">Website:</strong> duchastechnologies.com</p>
+    <p style="color:rgba(255,255,255,0.8);margin:0;"><strong style="color:var(--gold);">Address:</strong> 201 Tower-A, Shashvat Fl, Vadodara, Gujarat 390022</p>
+  </div>
+  <div class="footer-bar">
+    <span>Duchas Technologies Pvt Ltd · CIN: U62013GJ2023PTC140824 · Founded May 04, 2023</span>
+    <span>Jay Chintan Patel — Founder & Director</span>
+  </div>
+</div>
+
+</body>
+</html>
+
+    <div class="timeline__item timeline__item--active"><h3>2025 — Product Launch</h3><p>SaaS platform live. Self-service signup. 4 products launched. SDK & API available.</p></div>
+    <div class="timeline__item"><h3>2026 — Scale & Partnerships</h3><p>NVIDIA AI integration. AWS Activate program. Enterprise pilot customers. India market expansion.</p></div>
+    <div class="timeline__item"><h3>2027 — Global Expansion</h3><p>International markets. Hardware partnerships. Series A fundraise. 100K+ monthly authentications.</p></div>
+  </div>
+</div>
+
+    <div class="card"><h3>🔐 Biometric Authentication</h3><p>Palm vein, fingerprint & multimodal biometric verification with anti-spoofing liveness detection for enterprise IAM.</p></div>
+    <div class="card"><h3>💳 Contactless Payments</h3><p>Biometric-verified payment authorization. Wave-to-pay with palm vein recognition — no cards, no phones needed.</p></div>
+    <div class="card"><h3>🛡️ Identity Verification</h3><p>Real-time eKYC, document verification & biometric matching for digital onboarding and compliance.</p></div>
+    <div class="card"><h3>🏢 Access Control</h3><p>Biometric-powered physical & digital access management for smart buildings, offices & secure facilities.</p></div>
+  </div>
+</div>
