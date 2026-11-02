@@ -4,7 +4,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { ArrowRight, Shield, Zap, Cloud, Cpu, Fingerprint, Server, Globe, ArrowDown } from 'lucide-react';
 import SectionHeader from '../components/SectionHeader';
 import { products, capabilities, processSteps } from '../data/content';
-import { fadeInUp, fadeInLeft, fadeInRight, scaleIn, staggerContainer, defaultTransition, useScrollAnimation } from '../utils/animations';
+import { fadeInUp, scaleIn, staggerContainer, defaultTransition, useScrollAnimation } from '../utils/animations';
 import './Home.css';
 
 const stats = [
