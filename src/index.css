@@ -76,8 +76,8 @@
   --transition-spring: 500ms cubic-bezier(0.34, 1.56, 0.64, 1);
 
   /* Container */
-  --container-max: 1280px;
-  --container-wide: 1400px;
+  --container-max: 1140px;
+  --container-wide: 1320px;
   --nav-height: 80px;
 }
 
@@ -162,7 +162,7 @@ p {
   width: 100%;
   max-width: var(--container-max);
   margin: 0 auto;
-  padding: 0 var(--space-xl);
+  padding: 0 clamp(var(--space-xl), 5vw, 6rem);
 }
 
 .container-wide {
@@ -470,7 +470,7 @@ p {
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   .container {
-    padding: 0 var(--space-lg);
+    padding: 0 clamp(var(--space-lg), 4vw, var(--space-2xl));
   }
 
   .section {
