@@ -15,10 +15,10 @@ const stats = [
 ];
 
 const techStack = [
-  { phase: 'Capture', desc: 'Biometric sensor captures identity', icon: Fingerprint, color: '#b8860b' },
-  { phase: 'AWS Process', desc: 'Lambda + SageMaker ML pipeline', icon: Cloud, color: '#FF9900' },
-  { phase: 'NVIDIA Verify', desc: 'GPU-accelerated liveness detection', icon: Cpu, color: '#76B900' },
-  { phase: 'Authorize', desc: 'Secure token via API Gateway', icon: Shield, color: '#b8860b' },
+  { phase: 'AI Capture', desc: 'Smart biometric sensor with AI preprocessing', icon: Fingerprint, color: '#b8860b' },
+  { phase: 'AWS AI Pipeline', desc: 'Lambda + SageMaker ML inference & fraud detection', icon: Cloud, color: '#FF9900' },
+  { phase: 'NVIDIA AI Verify', desc: 'GPU-accelerated deep learning liveness & anti-spoofing', icon: Cpu, color: '#76B900' },
+  { phase: 'Smart Authorize', desc: 'AI-scored risk assessment & secure token via API Gateway', icon: Shield, color: '#b8860b' },
 ];
 
 const Home: React.FC = () => {
@@ -41,14 +41,14 @@ const Home: React.FC = () => {
         </div>
         <div className="container hero__container">
           <motion.div className="hero__content" initial="hidden" animate="visible" variants={staggerContainer}>
-            <motion.div className="hero__badge" variants={fadeInUp} transition={defaultTransition}><span className="hero__badge-dot" /> Powered by AWS · Biometric Identity Platform</motion.div>
-            <motion.h1 variants={fadeInUp} transition={defaultTransition}>The Future of<br /><span className="gradient-text-animated">Digital Identity</span><br />Starts Here.</motion.h1>
-            <motion.p className="hero__desc" variants={fadeInUp} transition={defaultTransition}>Enterprise-grade biometric authentication, contactless payments & identity verification — built on AWS with AI-powered precision.</motion.p>
+            <motion.div className="hero__badge" variants={fadeInUp} transition={defaultTransition}><span className="hero__badge-dot" /> AWS Activate · NVIDIA Inception · AI-Powered Identity Platform</motion.div>
+            <motion.h1 variants={fadeInUp} transition={defaultTransition}>AI-Powered<br /><span className="gradient-text-animated">Digital Identity</span><br />& Fraud Detection.</motion.h1>
+            <motion.p className="hero__desc" variants={fadeInUp} transition={defaultTransition}>Enterprise-grade AI-driven biometric authentication, intelligent fraud detection, contactless payments & identity verification — powered by deep learning on AWS with NVIDIA GPU acceleration.</motion.p>
             <motion.div className="hero__actions" variants={fadeInUp} transition={defaultTransition}>
               <Link to="/products" className="btn btn-primary btn-lg">Explore Solutions <ArrowRight size={18} /></Link>
               <Link to="/how-it-works" className="btn btn-secondary btn-lg">See How It Works</Link>
             </motion.div>
-            <motion.div className="hero__trust" variants={fadeInUp} transition={defaultTransition}><span>☁️ AWS Cloud</span><span>🟢 NVIDIA AI Ready</span><span>🇮🇳 Made in India</span></motion.div>
+            <motion.div className="hero__trust" variants={fadeInUp} transition={defaultTransition}><span>☁️ AWS Activate Member</span><span>🟢 NVIDIA Inception Program</span><span>🤖 AI-Powered</span><span>🇮🇳 Made in India</span></motion.div>
           </motion.div>
           <motion.div className="hero__visual" style={{y:heroY}} initial={{opacity:0,scale:0.88}} animate={{opacity:1,scale:1}} transition={{duration:1,delay:0.3}}>
             <div className="hero__image-wrapper">
@@ -71,7 +71,7 @@ const Home: React.FC = () => {
 
       {/* CAPABILITIES */}
       <section className="section capabilities"><div className="container">
-        <SectionHeader label="Core Capabilities" title="Why Enterprises Choose Duchas" description="Four pillars powering our biometric identity platform." />
+        <SectionHeader label="AI-Powered Capabilities" title="Why Enterprises Choose Duchas AI" description="Four AI-driven pillars powering our intelligent biometric identity platform." />
         <motion.div ref={capsAnim.ref} className="capabilities__grid" initial="hidden" animate={capsAnim.controls} variants={staggerContainer}>
           {capabilities.map(c=>{const I=c.icon;return(<motion.div key={c.title} className="capabilities__item glass-card" variants={scaleIn} transition={defaultTransition}><div className="capabilities__icon"><I size={28}/></div><h3>{c.title}</h3><p>{c.description}</p></motion.div>);})}
         </motion.div>
@@ -79,7 +79,7 @@ const Home: React.FC = () => {
 
       {/* SOLUTIONS */}
       <section className="section solutions"><div className="container">
-        <SectionHeader label="Our Solutions" title="Biometric Products for Every Enterprise Need" />
+        <SectionHeader label="AI Solutions" title="Intelligent Biometric Products for Every Enterprise" />
         <motion.div ref={solAnim.ref} className="solutions__grid" initial="hidden" animate={solAnim.controls} variants={staggerContainer}>
           {products.map(p=>{const I=p.icon;return(<motion.div key={p.id} variants={scaleIn} transition={defaultTransition}><Link to={`/products/${p.slug}`} className="solution-card glass-card">
             <div className="solution-card__img"><img src={p.image} alt={p.name} loading="lazy" /><div className="solution-card__overlay" /></div>
@@ -106,15 +106,15 @@ const Home: React.FC = () => {
             </React.Fragment>);})}
           </motion.div>
           <motion.div className="tech-workflow__badges" initial="hidden" whileInView="visible" viewport={{once:true}} variants={staggerContainer}>
-            <motion.div className="tech-badge glass-card" variants={scaleIn} transition={defaultTransition}><span className="tech-badge__icon">☁️</span><div><strong>Amazon Web Services</strong><span>EC2 · S3 · Lambda · SageMaker · CloudFront · API Gateway</span></div></motion.div>
-            <motion.div className="tech-badge glass-card" variants={scaleIn} transition={defaultTransition}><span className="tech-badge__icon">🟢</span><div><strong>NVIDIA AI Platform</strong><span>CUDA · TensorRT · Triton Inference · DeepStream (Future)</span></div></motion.div>
+            <motion.div className="tech-badge glass-card" variants={scaleIn} transition={defaultTransition}><span className="tech-badge__icon">☁️</span><div><strong>Amazon Web Services — AWS Activate</strong><span>EC2 · S3 · Lambda · SageMaker AI · CloudFront · API Gateway · Rekognition</span></div></motion.div>
+            <motion.div className="tech-badge glass-card" variants={scaleIn} transition={defaultTransition}><span className="tech-badge__icon">🟢</span><div><strong>NVIDIA AI — Inception Program</strong><span>CUDA · TensorRT · Triton Inference · DeepStream · GPU-Accelerated Deep Learning</span></div></motion.div>
           </motion.div>
         </div>
       </section>
 
       {/* PROCESS */}
       <section className="section process-preview"><div className="container">
-        <SectionHeader label="How It Works" title="Four Steps to Verified Identity" description="A seamless journey from biometric capture to authorized interaction." />
+        <SectionHeader label="How AI Works" title="Four AI-Powered Steps to Verified Identity" description="A seamless AI-driven journey from intelligent biometric capture to fraud-checked authorization." />
         <motion.div ref={procAnim.ref} className="process-preview__steps" initial="hidden" animate={procAnim.controls} variants={staggerContainer}>
           {processSteps.map(s=>(<motion.div key={s.step} className="process-step glass-card" variants={fadeInUp} transition={defaultTransition}>
             <div className="process-step__num">{String(s.step).padStart(2,'0')}</div><h3>{s.title}</h3><p>{s.description}</p>
@@ -126,8 +126,8 @@ const Home: React.FC = () => {
       {/* CTA */}
       <section className="section final-cta"><div className="final-cta__bg" /><div className="container">
         <motion.div ref={ctaAnim.ref} className="final-cta__inner" initial="hidden" animate={ctaAnim.controls} variants={fadeInUp} transition={defaultTransition}>
-          <h2>Ready to Build the Future of Digital Identity?</h2>
-          <p>Connect with Duchas Technologies — enterprise biometric solutions built on AWS.</p>
+          <h2>Ready to Build the Future of AI-Powered Digital Identity?</h2>
+          <p>Connect with Duchas Technologies — AI-driven biometric solutions, intelligent fraud detection & real-time security built on AWS.</p>
           <div className="final-cta__actions">
             <Link to="/contact" className="btn btn-primary btn-lg">Contact Us <ArrowRight size={18}/></Link>
             <Link to="/products" className="btn btn-secondary btn-lg">Explore Products</Link>

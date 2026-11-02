@@ -44,29 +44,29 @@ export const products: Product[] = [
     slug: 'biometric-authentication',
     name: 'Biometric Authentication',
     shortName: 'Biometric Auth',
-    tagline: 'Secure identity verification through advanced biometric recognition technology.',
+    tagline: 'AI-powered identity verification through advanced biometric recognition and intelligent fraud detection.',
     description:
-      'Our biometric authentication solution is designed to provide secure, frictionless identity verification using advanced biometric recognition technologies. By leveraging palm vein, fingerprint, and multi-modal biometric data, we aim to replace traditional authentication methods with faster, more secure alternatives.',
+      'Our AI-driven biometric authentication solution provides secure, frictionless identity verification using deep learning-powered biometric recognition. By leveraging palm vein, fingerprint, and multi-modal biometric data with neural network analysis, we replace traditional authentication with faster, smarter, AI-enhanced alternatives that detect and prevent fraud in real-time.',
     image: 'https://images.unsplash.com/photo-1535378917042-10a22c95931a?w=1200&q=90&auto=format',
     icon: Fingerprint,
     color: '#b8860b',
     features: [
       {
-        title: 'Multi-Modal Biometric Capture',
+        title: 'AI Multi-Modal Biometric Capture',
         description:
-          'Support for palm vein, fingerprint, and other biometric modalities to ensure flexible and reliable identity verification.',
+          'AI-enhanced support for palm vein, fingerprint, and other biometric modalities with intelligent preprocessing for reliable identity verification.',
         icon: Scan,
       },
       {
-        title: 'Real-Time Processing',
+        title: 'Real-Time AI Processing',
         description:
-          'Designed for rapid biometric matching to support smooth user experiences in high-throughput environments.',
+          'GPU-accelerated deep learning inference for rapid biometric matching, delivering sub-200ms response times in high-throughput environments.',
         icon: Zap,
       },
       {
-        title: 'Anti-Spoofing Technology',
+        title: 'AI Anti-Spoofing & Fraud Detection',
         description:
-          'Built-in liveness detection mechanisms intended to prevent presentation attacks and unauthorized access attempts.',
+          'Neural network-powered liveness detection and intelligent fraud scoring to prevent presentation attacks, deepfakes, and unauthorized access in real-time.',
         icon: ShieldCheck,
       },
       {
@@ -559,23 +559,23 @@ export const products: Product[] = [
 
 export const capabilities = [
   {
-    title: 'Biometric Innovation',
-    description: 'Exploring advanced biometric technologies for reliable identity recognition.',
+    title: 'AI-Driven Biometric Innovation',
+    description: 'Leveraging deep learning and neural networks for next-generation biometric recognition with continuously improving accuracy.',
     icon: Fingerprint,
   },
   {
-    title: 'Contactless Experiences',
-    description: 'Creating seamless interactions that minimize physical contact.',
+    title: 'Intelligent Fraud Detection',
+    description: 'Real-time AI-powered anomaly detection, behavioral analytics, and adaptive threat scoring to prevent fraud before it happens.',
     icon: Wifi,
   },
   {
-    title: 'Security-Focused Design',
-    description: 'Building solutions where security is a foundational design principle.',
+    title: 'AI-Enhanced Security',
+    description: 'Machine learning models that evolve to counter emerging threats — from deepfake detection to AI anti-spoofing and intelligent risk assessment.',
     icon: ShieldCheck,
   },
   {
-    title: 'Technology for Real-World Applications',
-    description: 'Developing practical solutions that address genuine business challenges.',
+    title: 'GPU-Accelerated AI Processing',
+    description: 'NVIDIA GPU-powered deep learning inference for real-time biometric matching, liveness detection, and predictive security analytics.',
     icon: Cpu,
   },
 ];
@@ -583,49 +583,49 @@ export const capabilities = [
 export const processSteps = [
   {
     step: 1,
-    title: 'Identity Capture',
+    title: 'AI-Powered Capture',
     description:
-      'A biometric sensor captures the user\'s unique identifier — such as palm vein patterns, fingerprints, or other biometric data — in a quick, non-intrusive interaction.',
+      'An intelligent biometric sensor captures the user\'s unique identifier — such as palm vein patterns, fingerprints, or other biometric data — with AI-enhanced preprocessing for optimal quality in any condition.',
   },
   {
     step: 2,
-    title: 'Secure Processing',
+    title: 'Deep Learning Processing',
     description:
-      'The captured biometric data is processed through secure algorithms that extract and encode unique identifying features while maintaining data privacy.',
+      'The captured biometric data is processed through AI-powered algorithms and neural networks that extract and encode unique identifying features while maintaining data privacy and detecting anomalies.',
   },
   {
     step: 3,
-    title: 'Verification',
+    title: 'AI Verification & Fraud Check',
     description:
-      'The processed biometric template is compared against enrolled records using advanced matching algorithms to confirm the user\'s identity.',
+      'The processed biometric template is matched using deep learning models with simultaneous AI fraud detection — scoring risk, detecting spoofing attempts, and confirming identity with high confidence.',
   },
   {
     step: 4,
-    title: 'Authorized Interaction',
+    title: 'Intelligent Authorization',
     description:
-      'Upon successful verification, the authorized action is completed — whether it\'s a payment, access grant, identity confirmation, or other secured interaction.',
+      'Upon AI-verified identity confirmation, the authorized action is completed — whether it\'s a payment, access grant, identity confirmation, or other secured interaction — all protected by real-time intelligent threat monitoring.',
   },
 ];
 
 export const companyPrinciples = [
   {
-    title: 'Innovation with Purpose',
+    title: 'AI-Driven Innovation',
     description:
-      'We pursue technological innovation that serves genuine needs, not innovation for its own sake. Every solution we develop is guided by real-world problems and practical applications.',
+      'We harness artificial intelligence and machine learning to solve real-world identity and security challenges. Every solution we build is powered by intelligent algorithms that continuously learn and improve.',
   },
   {
-    title: 'User-Centric Thinking',
+    title: 'User-Centric AI Design',
     description:
-      'We design from the user\'s perspective, creating experiences that are intuitive and accessible. Technology should simplify interactions, not complicate them.',
+      'We design AI systems from the user\'s perspective — creating intelligent experiences that are intuitive, transparent, and accessible. Our AI works invisibly to make interactions seamless and secure.',
   },
   {
-    title: 'Responsible Technology',
+    title: 'Responsible AI & Security',
     description:
-      'We approach biometric and identity technology with a deep sense of responsibility, considering privacy implications, ethical use, and data protection at every stage.',
+      'We approach AI-powered biometric and identity technology with deep responsibility — ensuring ethical AI practices, privacy-first design, robust fraud detection, and transparent data protection at every stage.',
   },
   {
-    title: 'Continuous Improvement',
+    title: 'Continuous AI Improvement',
     description:
-      'We are committed to learning, iterating, and improving our solutions continuously based on feedback, research, and evolving technology landscapes.',
+      'Our machine learning models and fraud detection systems continuously evolve — learning from new patterns, adapting to emerging threats, and improving accuracy through ongoing training and real-world feedback.',
   },
 ];
